@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{title}}</title>
+  <meta name="viewport" content="width=device-width">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css">
+  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+  <script src="/js/lib/matchmedia.js"></script>
+  <script src="/js/lib/picturefill.js"></script>
+  <script src="/js/script.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+ </head>
+ <body>
+  <header role="banner">
+   <h1>{{title}}</h1>
+  </header>
+  <div role="main">   
+
+   <span data-picture data-alt="It's a photo of a tree">
+      <span data-src="/img/small/uploads/blog/photo.jpg"></span>
+      <span data-src="/img/medium/uploads/blog/photo.jpg" data-media="(min-width: 400px)"></span>
+      <span data-src="/img/large/uploads/blog/photo.jpg" data-media="(min-width: 800px)"></span>
+      <span data-src="/img/exlarge/uploads/blog/photo.jpg" data-media="(min-width: 1000px)"></span>
+      
+      <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+      <noscript>
+        <img src=".img/small/uploads/blog/photo.jpg" alt="It's a photo of a tree">
+      </noscript>
+    </span>
+  </div>
+ </body>
+</html>

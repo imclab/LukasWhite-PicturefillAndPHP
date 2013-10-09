@@ -1,0 +1,20 @@
+{
+    "jpeg_compression": 80,
+    "sizes": {
+        "small" : {            
+            "width" : 180            
+        },
+        "medium" : {            
+            "width" : 375,
+            "query" : "(min-width: 400px)"
+        },
+        "large" : {            
+            "width" : 480,
+            "query" : "(min-width: 800px)"
+        },
+        "exlarge" : {            
+            "width" : 768,
+            "query" : "(min-width: 1000px)"
+        }
+    }
+}
